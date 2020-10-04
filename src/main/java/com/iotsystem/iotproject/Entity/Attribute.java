@@ -14,4 +14,5 @@ public class Attribute {
     private String attributeName;
     private double maxValue;
     private double minValue;
+    private double actualValue;
 }

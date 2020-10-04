@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class DeviceServiceImpl implements  IDeviceService{
+public class DeviceServiceImpl implements IDeviceService {
     @Autowired
     IDeviceRepository repository;
 
@@ -30,11 +30,11 @@ public class DeviceServiceImpl implements  IDeviceService{
 
     @Override
     public void updateDevice(Device device, int deviceId) {
-
+    repository.save(device);
     }
 
     @Override
     public void deleteDevice(int deviceId) {
-
+    repository.deleteById(deviceId);
     }
 }
