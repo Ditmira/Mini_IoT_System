@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
-
+@Data
 @Getter
 @Setter
 @ToString
@@ -18,6 +18,6 @@ public class Device {
     private int id;
     private String deviceType;
     private String deviceState;
-    @DBRef
+    //@DBRef
     private List<Attribute> attributes;
 }

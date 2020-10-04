@@ -2,7 +2,7 @@ package com.iotsystem.iotproject.Entity;
 
 import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
-
+@Data
 @Getter
 @Setter
 @ToString
